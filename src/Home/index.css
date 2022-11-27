@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto","Suranna", sans-serif;
+    min-height: 150vh;
+  }
+  
+  /* Navigation */
+  .nav-container {
+    position: sticky;
+    /* max-width: 100%; */
+    background: #f5f189;
+    height: 125px;
+  }
+  .wrapper {
+    /* height: 1500px;  */
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+  }
+  
+  nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo a{
+    /* position: absolute; */
+    left: 116px;
+    color: #000000;
+    font-family: "Suranna";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    /* margin-top: 28px; */
+    text-decoration: none;
+  }
+  
+  .logo img{
+    height: 100px;
+  }
+  
+  nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .nav-items li{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 16px;
+    padding: 10px 0px;
+  }
+  
+  .nav-items li:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+  }
+  
+  .nav-items li:first-child{;
+    border: 0.05px solid #000000;
+    border-color: #363232;
+    border-radius: 2px;
+  }
+  
+  .nav-items li:last-child{;
+    background-color: #FEA3A2;
+    border-radius: 2px;
+  }
+  
+  .nav-items a{
+    text-decoration: none;
+    font-family: "SeoulHangang CL", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: #363232;
+    padding: 10px 48px;
+  }
+  
+  /* Header */
+  .header-container{
+    background: #73A7F5;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(65vh - 72px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .bird-content{
+    padding-left: 50px;
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header h1{
+    font-family: "Suranna";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: #000000;
+  }
+  
+  header p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+  }
+  
+  header .bird-image{
+    position:relative;
+  }
+  
+  header .bird-image img{
+    max-width: 450px;
+    transition: 300ms;
+  }
+  
+  header .bird-image img:hover{
+    transform:rotate(-2deg);
+  }
+  
+  /* Hidden Items */
+  
+  
+  
+  /* Footer */
+  .footer-container{
+    background: #F6F3FF;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+  }
+  
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  footer h1{
+    align-items: center;
+    font-family: "Suranna";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: #000000;
+  }
+  
+  footer p{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+  }
+  
+  
+  /* CHATBOX
+  =============== */
+  .chatbox {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+  
+  /* CONTENT IS CLOSE */
+  .chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: #ffffffea;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+  
+  /* CONTENT ISOPEN */
+  .chatbox--active {
+    transform: translateY(-20px);
+    z-index: 123456;
+    opacity: 1;
+    
+  }
+  
+  /* BUTTON */
+  .chatbox__button {
+    text-align: right;
+  }
+  
+  
+  /* HEADER */
+  .chatbox__header {
+    position: sticky;
+    top: 0;
+    background: #f5f189;
+  }
+  
+  
+  /* MESSAGES */
+  .messages__bot {
+    margin-right: auto;
+  }
+  
+  
+  /* FOOTER */
+  .chatbox__footer {
+    position: sticky;
+    bottom: 0;
+  }
+  
+  
+  
+  
+  
